@@ -5,12 +5,12 @@ import { ReactNode } from "react";
 
 
 
-const Layout = async ({ children }: { children: ReactNode }) => {
+const AuthLayout = async ({ children }: { children: ReactNode }) => {
     
   
 
     return (
-        <div className="root-layout">
+        <div className="root-layout auth-layout">
             <nav>
                 <Link href="/" className="flex items-center gap-2">
                     <Image src="/logo.svg" alt="MockMate Logo" width={38} height={32} />
@@ -18,9 +18,12 @@ const Layout = async ({ children }: { children: ReactNode }) => {
                 </Link>
             </nav>
 
+          
             {children}
+           
+
         </div>
     );
 };
 
-export default Layout;
+export default AuthLayout;
